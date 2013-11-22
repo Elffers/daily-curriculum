@@ -11,6 +11,8 @@ class Phrase
       @word_count[word] = @word_count[word] || 0 #interesting that @word_count[word].default = 0 didn't work
       @word_count[word] += 1
     end
+    word_count.each {|word, count| puts "#{word}: #{count}"} 
   end
+
 
 end
