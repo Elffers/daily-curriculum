@@ -27,8 +27,5 @@ words.each do |word|
   # end
 end
 
-
-words.inject({}) { |word, result| result[word] += 1 || 0; result }
-  
 #prints list of words with its word count
 word_count.each {|word, count| puts "#{word}: #{count}"} 
